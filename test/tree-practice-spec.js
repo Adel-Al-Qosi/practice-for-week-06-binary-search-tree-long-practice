@@ -417,7 +417,6 @@ describe('Binary Tree Practice', () => {
     });
 
     it('deletes a node with two children, replacing it with the in-order predecessor or successor', function() {
-
       deleteNodeBST(bstRoot, 6);
       expect(bstRoot.right.val).to.satisfy(function (num) {
         return (num === 5 || num === 7)
